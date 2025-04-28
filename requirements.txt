@@ -1,0 +1,29 @@
+import os
+import sys
+from pathlib import Path
+
+def setup_requirements():
+    requirements_file = "requirements.txt"
+    dependencies = [
+        "discord.py==2.3.2",  # Versión estable de discord.py
+        "python-dotenv==1.0.0",  # Para manejar variables de entorno (.env)
+        # Añade otras dependencias aquí si es necesario
+    ]
+
+    # Verificar si el archivo existe
+    if not os.path.exists(requirements_file):
+        print(f"⚠️ Error: No se encontró '{requirements_file}' en {os.getcwd()}")
+        
+        # Crear el archivo automáticamente
+        try:
+            with open(requirements_file, "w") as f:
+                f.write("\n".join(dependencies))
+            print(f"✅ Se creó '{requirements_file}' con las dependencias básicas.")
+            print("📌 Ejecuta: `pip install -r requirements.txt`")
+        except Exception as e:
+            print(f"❌ Error al crear el archivo: {e}")
+            sys.exit(1)
+    else:
+        print(f"✅ '{requirements_file}' ya existe. Usa: `pip install -r requirements.txt`")
+
+# Llamar a la función al importar el módulo
