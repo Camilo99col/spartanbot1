@@ -1,0 +1,54 @@
+/* Custom styles for Warzone Team Finder */
+
+/* Override any Bootstrap styles only when necessary */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
+
+/* Custom badge styles */
+.badge-kd {
+    background-color: var(--bs-success);
+    color: white;
+}
+
+/* Custom card styles */
+.card {
+    transition: transform 0.2s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/static/images/warzone-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 5rem 0;
+    margin-bottom: 2rem;
+    border-radius: 0.3rem;
+}
+
+/* Command examples */
+pre {
+    background-color: #2d2d2d;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    overflow: auto;
+    margin: 1rem 0;
+}
+
+/* Active navigation link */
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: var(--bs-primary);
+}

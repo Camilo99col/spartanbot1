@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block title %}Add to Discord - Warzone Team Finder{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-5">
+                    <h1 class="text-center mb-4">Add to Discord</h1>
+                    
+                    <div class="text-center mb-4">
+                        <img src="{{ url_for('static', filename='img/discord-logo.svg') }}" alt="Discord Logo" width="80" class="mb-3">
+                        <h2 class="h4">Add Warzone Team Finder to your server</h2>
+                        <p class="text-muted">Connect with teammates for your next Warzone match.</p>
+                    </div>
+                    
+                    <div class="alert alert-info">
+                        <h3 class="h5"><i class="bi bi-info-circle"></i> What does this bot do?</h3>
+                        <p class="mb-0">The Warzone Team Finder bot helps players find teammates based on platform, game mode, and skill level (K/D ratio). It makes team formation easy with its interactive commands.</p>
+                    </div>
+                    
+                    <h3 class="h5 mt-4 mb-3">Features:</h3>
+                    <ul class="list-group mb-4">
+                        <li class="list-group-item d-flex align-items-center">
+                            <span class="badge bg-primary me-3"><i class="bi bi-person-plus"></i></span>
+                            Player registration with Activision ID
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <span class="badge bg-primary me-3"><i class="bi bi-search"></i></span>
+                            Team search by platform and game mode
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <span class="badge bg-primary me-3"><i class="bi bi-mic"></i></span>
+                            Voice channel tracking
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <span class="badge bg-primary me-3"><i class="bi bi-graph-up"></i></span>
+                            Skill-based matchmaking
+                        </li>
+                    </ul>
+                    
+                    <div class="text-center mb-4">
+                        <a href="https://discord.com/oauth2/authorize?client_id=1363263585979203725&permissions=92160&integration_type=0&scope=bot" class="btn btn-primary btn-lg" target="_blank">
+                            <i class="bi bi-discord me-2"></i> Add to Discord
+                        </a>
+                    </div>
+                    
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Required Permissions:</h3>
+                            <ul class="list-unstyled mb-0">
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Send Messages</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Embed Links</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Read Message History</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Use External Emojis</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i> View Channels</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

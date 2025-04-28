@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block title %}Home - Warzone Team Finder{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="p-5 mb-4 bg-dark rounded-3">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">Warzone Team Finder</h1>
+            <p class="col-md-8 fs-4">Find the perfect squad for your Warzone matches. Use our Discord bot to connect with players based on platform, game mode, and skill level.</p>
+            <a href="https://discord.com/oauth2/authorize?client_id=1363263585979203725&permissions=92160&integration_type=0&scope=bot" class="btn btn-primary btn-lg" target="_blank">Add to Discord</a>
+            <a href="{{ url_for('commands') }}" class="btn btn-outline-light btn-lg ms-2">View Commands</a>
+        </div>
+    </div>
+
+    <div class="row align-items-md-stretch">
+        <div class="col-md-6">
+            <div class="h-100 p-5 text-white bg-primary rounded-3">
+                <h2>Find teammates easily</h2>
+                <p>Create team searches with specific requirements for platform, game mode, and K/D ratio. Players can join your team with a single click.</p>
+                <button class="btn btn-outline-light" type="button">Learn more</button>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="h-100 p-5 bg-secondary border rounded-3">
+                <h2>Track your stats</h2>
+                <p>Register your Activision ID and K/D ratio to make it easier for others to find you. Access your profile at any time.</p>
+                <button class="btn btn-outline-light" type="button">See example</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-5">
+        <h2 class="mb-4">How It Works</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">1. Register</h5>
+                        <p class="card-text">Use the /registrar command to register your Activision ID and K/D ratio in the Discord server.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">2. Create or Join Teams</h5>
+                        <p class="card-text">Use /buscar_equipo to create a team search or join existing teams with the click of a button.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">3. Play Together</h5>
+                        <p class="card-text">Connect with your new teammates via Discord and Activision ID to start playing together.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

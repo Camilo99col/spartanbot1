@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+
+{% block title %}Commands - Warzone Team Finder{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mb-4">Bot Commands</h1>
+    <p class="lead">Here are all the commands available for the Warzone Team Finder bot.</p>
+
+    <div class="row mt-5">
+        <div class="col-lg-12">
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">/registrar</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Register your Activision ID and K/D ratio to join teams.</p>
+                    <h6>How to use:</h6>
+                    <pre class="bg-dark text-light p-3 rounded">/registrar</pre>
+                    <p>This will open a registration form where you can enter your Activision ID and K/D ratio.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">/perfil</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">View your registered profile information.</p>
+                    <h6>How to use:</h6>
+                    <pre class="bg-dark text-light p-3 rounded">/perfil</pre>
+                    <p>Displays your registered Activision ID and K/D ratio.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">/buscar_equipo</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Create a team search for others to join.</p>
+                    <h6>How to use:</h6>
+                    <pre class="bg-dark text-light p-3 rounded">/buscar_equipo plataforma: [PC/Xbox/PlayStation/Crossplay] modo: [Battle Royale/Resurgimiento/etc] kd_minimo: [number] max_jugadores: [2/3/4] descripcion: [optional text]</pre>
+                    <h6>Parameters:</h6>
+                    <ul>
+                        <li><strong>plataforma</strong>: Your gaming platform (PC, Xbox, PlayStation, or Crossplay)</li>
+                        <li><strong>modo</strong>: Game mode (Battle Royale, Resurgimiento, Ranked BR, etc)</li>
+                        <li><strong>kd_minimo</strong>: Minimum K/D ratio required (default: 0.0)</li>
+                        <li><strong>max_jugadores</strong>: Maximum team size (Duo=2, Trio=3, Squad=4)</li>
+                        <li><strong>descripcion</strong>: Optional description for your team search</li>
+                    </ul>
+                    
+                    <h6>Features:</h6>
+                    <ul>
+                        <li><strong>Voice Channel Detection</strong>: If you're in a voice channel when creating a team, it will be displayed in the search</li>
+                        <li><strong>Update Button</strong>: Use the 🔄 button to update which voice channel your team is using</li>
+                        <li><strong>Team Management</strong>: Join teams with the ✅ button or cancel your own search with ❌</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">/help</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Display bot help information.</p>
+                    <h6>How to use:</h6>
+                    <pre class="bg-dark text-light p-3 rounded">/help</pre>
+                    <p>Shows a list of available commands and their basic descriptions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

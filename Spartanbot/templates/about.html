@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+
+{% block title %}About - Warzone Team Finder{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mb-4">About Warzone Team Finder</h1>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="card-title">Our Mission</h3>
+                    <p class="card-text">Warzone Team Finder is a Discord bot designed to help Warzone players find teammates based on platform, game mode, and skill level. Our mission is to make it easy for players to connect with like-minded gamers to enhance their Warzone experience.</p>
+                    
+                    <h3 class="mt-4">Key Features</h3>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item bg-transparent">✅ Registration of Activision IDs and KD ratio</li>
+                        <li class="list-group-item bg-transparent">✅ Team search with platform and game mode filtering</li>
+                        <li class="list-group-item bg-transparent">✅ Interactive team joining with buttons</li>
+                        <li class="list-group-item bg-transparent">✅ User profiles with stats</li>
+                        <li class="list-group-item bg-transparent">✅ Customizable team sizes (Duo, Trio, Squad)</li>
+                        <li class="list-group-item bg-transparent">✅ KD minimum requirements</li>
+                    </ul>
+                    
+                    <h3>How It Works</h3>
+                    <p>Warzone Team Finder uses Discord's slash command system to provide a seamless experience for users. Players can register their Activision ID and K/D ratio, then create or join team searches based on specific criteria such as platform, game mode, and skill level.</p>
+                    
+                    <h3 class="mt-4">Privacy</h3>
+                    <p>We only store the information you provide when using our bot commands. This includes your Discord ID, Activision ID, and K/D ratio. This information is only used to help match you with appropriate teammates.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4">
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">Bot Statistics</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-transparent d-flex justify-content-between">
+                            <span>Servers:</span>
+                            <span class="badge bg-primary rounded-pill">10+</span>
+                        </li>
+                        <li class="list-group-item bg-transparent d-flex justify-content-between">
+                            <span>Registered Users:</span>
+                            <span class="badge bg-primary rounded-pill">100+</span>
+                        </li>
+                        <li class="list-group-item bg-transparent d-flex justify-content-between">
+                            <span>Teams Created:</span>
+                            <span class="badge bg-primary rounded-pill">250+</span>
+                        </li>
+                        <li class="list-group-item bg-transparent d-flex justify-content-between">
+                            <span>Version:</span>
+                            <span class="badge bg-secondary rounded-pill">1.0.0</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">Contact</h5>
+                </div>
+                <div class="card-body">
+                    <p>For support or feedback, please join our Discord server or contact us through the following channels:</p>
+                    <div class="d-grid gap-2">
+                        <a href="#" class="btn btn-outline-primary">Join Support Server</a>
+                        <a href="mailto:support@example.com" class="btn btn-outline-primary">Email Support</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
