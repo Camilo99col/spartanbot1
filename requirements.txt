@@ -1,4 +1,4 @@
-import os
+pip install
 import sys
 from pathlib import Path
 
